@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background: #111;
+  border-bottom: 1px solid #00ff88;
+}
+
+nav a {
+  color: #00ff88;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* TITLE */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #00ff88;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* PROJECT CARD */
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #00ff88;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ff88;
+}
+
+.card h3 {
+  color: #00ff88;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #00ff88;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<h1>My Projects</h1>
+
+<!-- PROJECT GRID -->
+<div class="grid">
+
+  <div class="card">
+    <h3>TikTok UI Clone</h3>
+    <p>A mobile-style scrolling video interface built with HTML & CSS.</p>
+    <a href="#" class="btn">View</a>
+  </div>
+
+  <div class="card">
+    <h3>Portfolio Website</h3>
+    <p>A professional multi-page portfolio hosted online.</p>
+    <a href="#" class="btn">View</a>
+  </div>
+
+  <div class="card">
+    <h3>Game UI Design</h3>
+    <p>Concept UI for a mobile shooting game interface.</p>
+    <a href="#" class="btn">View</a>
+  </div>
+
+  <div class="card">
+    <h3>Coming Soon</h3>
+    <p>More powerful projects are on the way 🚀</p>
+    <a href="#" class="btn">View</a>
+  </div>
+
+</div>
+
+</body>
+</html>
